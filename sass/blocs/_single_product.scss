@@ -79,3 +79,37 @@ section#single-product{
         }
     }
 }
+
+@media (max-width: 1000px) {
+    section#single-product{
+        width: 90%;
+        flex-direction: column;
+        margin-top: 25px;
+        .row{
+            width: 100%;
+            height: max-content;
+            .column{
+                .thumbnail{
+                    height: 180px;
+                }
+                .descr{
+                    padding: 0;
+                    .top{
+                        p#product_price{
+                            margin: 0;
+                        }
+                    }
+                    .bottom{
+                        .select{
+                            overflow: visible;
+ 
+                            label{
+                                width: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }

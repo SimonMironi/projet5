@@ -67,6 +67,27 @@ nav.blank .icons-links a i {
   color: #4ac29a;
 }
 
+@media (max-width: 1000px) {
+  nav {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: 80px;
+  }
+  nav .logo h1 {
+    font-size: 23px;
+  }
+  nav .logo i {
+    font-size: 26px;
+  }
+  nav .icons-links a i {
+    font-size: 26px;
+  }
+  nav.blank {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
 footer {
   height: 15vh;
   background-color: #ededed;
@@ -93,6 +114,19 @@ footer .links a {
   margin: 0px 15px;
 }
 
+@media (max-width: 1000px) {
+  footer {
+    height: auto;
+  }
+  footer i {
+    margin-top: 15px;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 section {
   margin: 0;
   overflow: hidden;
@@ -269,6 +303,88 @@ section.products .container #products .card a {
   z-index: 5;
 }
 
+@media (max-width: 1000px) {
+  section.hero {
+    height: 80vh;
+  }
+  section.hero .container {
+    width: 90%;
+    height: auto;
+    justify-content: flex-end;
+  }
+  section.hero .container .text {
+    position: absolute;
+    z-index: 4;
+    font-family: "Poppins";
+    width: 90%;
+    height: max-content;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  section.hero .container .text h2 {
+    line-height: 40px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #4ac29a;
+    color: transparent;
+    margin: 0;
+    text-align: center;
+  }
+  section.hero .container .text p {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-weight: 4000;
+    text-align: center;
+  }
+  section.hero .container .text a {
+    font-size: 18px;
+    background-color: #fff;
+    color: #282828;
+    padding: 2px 15px;
+    border-radius: 33px;
+    text-decoration: none;
+    width: max-content;
+    margin: auto;
+    box-shadow: 3px 4px 0px 0px #4ac29a;
+    transition: 0.4s;
+  }
+  section.hero .container .text a:hover {
+    box-shadow: 6px 7px 0px 0px #262161;
+  }
+  section.hero .container img {
+    right: -60%;
+  }
+  section.products .container {
+    width: 90%;
+  }
+  section.products .container .wrapper h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  section.products .container #products .card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  section.products .container #products .card h2, section.products .container #products .card p {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  section.products .container #products .card h2 {
+    font-size: 16px;
+  }
+  section.products .container #products .card a {
+    font-size: 12px;
+  }
+}
 section#single-product {
   width: 70%;
   margin: 40px auto;
@@ -346,6 +462,32 @@ section#single-product .row .column .bottom button i {
   margin-right: 15px;
 }
 
+@media (max-width: 1000px) {
+  section#single-product {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  section#single-product .row {
+    width: 100%;
+    height: max-content;
+  }
+  section#single-product .row .column .thumbnail {
+    height: 180px;
+  }
+  section#single-product .row .column .descr {
+    padding: 0;
+  }
+  section#single-product .row .column .descr .top p#product_price {
+    margin: 0;
+  }
+  section#single-product .row .column .descr .bottom .select {
+    overflow: visible;
+  }
+  section#single-product .row .column .descr .bottom .select label {
+    width: max-content;
+  }
+}
 section.panier {
   width: 60%;
   margin: auto;
@@ -473,6 +615,31 @@ a#add_to_cart {
   text-decoration: none;
   display: block;
   margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  section.panier {
+    width: 90%;
+  }
+  section.panier #row div {
+    flex-direction: column;
+    width: 90%;
+  }
+  section.panier #row div img {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    height: auto;
+    width: 100%;
+  }
+  section.panier #row div p {
+    font-size: 12px;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+  }
+  section.panier #row div p.name {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

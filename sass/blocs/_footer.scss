@@ -24,3 +24,17 @@ footer{
     }
 }
 
+@media (max-width: 1000px) {
+    footer{
+        height: auto;
+
+        i{
+            margin-top: 15px;
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

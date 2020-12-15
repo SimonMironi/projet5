@@ -1,0 +1,60 @@
+nav{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    height: 120px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo{
+        margin: auto 0px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+
+        h1{
+            font-family: 'Leckerli One', cursive;
+            margin: 0px 0px 0px 15px;
+            font-size: 35px;
+        }
+        i{
+            font-size: 40px;    
+        }
+    }
+    .icons-links{
+        color: white;
+        margin: auto 0px;
+        font-size: 25px;
+        a{
+            text-decoration: none;
+            i{
+                margin: 0px 10px;
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+    &.blank{
+        width: 100%;
+        position: relative;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0% 15%;
+        box-shadow: 0px 4px 15px 5px rgba(0,0,0,0.18);
+        .logo{
+            color: rgb(74, 194, 154);
+        }
+        .icons-links{
+            a{
+                i{
+                    color: rgb(74, 194, 154);
+                }
+            }
+        }
+    }
+}

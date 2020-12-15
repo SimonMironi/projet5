@@ -1,0 +1,26 @@
+footer{
+    height: 15vh;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    .socials{
+        margin: auto;
+        a{ 
+            text-decoration: none;
+            margin: 0px 10px;
+            i{
+                font-size: 35px;
+                color: $green;
+            }
+        }   
+    }
+    .links{
+        margin: auto;
+        a{
+            text-decoration: none;
+            color: gray;
+            margin: 0px 15px;
+        }
+    }
+}
+

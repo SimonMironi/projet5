@@ -7,6 +7,7 @@ const urlParams = new URLSearchParams(query)
 //On stock l'ID du produit dans une variable
 const productId = urlParams.get('productId')
 
+//On affiche le produit en fonction de l'id passé en paramètre
 function displayChoosenProduct(camera){
 
     const productImg = document.getElementById('thumbnail')
@@ -27,6 +28,7 @@ function displayChoosenProduct(camera){
     }
 }
 
+//Fonction pour vérifier qu'une option à bien été sélectionnée
 function optionExist(Array, valueToDetect){
     for (let elem of Array){
         if (elem.lense === valueToDetect){
@@ -36,6 +38,7 @@ function optionExist(Array, valueToDetect){
     return false
 }
 
+//Fonction pour incrémenter la quantité
 function incrQuantity(Array, valueToDetect){
     for (let elem of Array){
         if (elem.lense === valueToDetect){
@@ -45,6 +48,7 @@ function incrQuantity(Array, valueToDetect){
     return Array
 }
 
+//Fonction qui vérifie si un produit selon une option x est déjà selectionné, puis ajoute ou incrémente le produit si c'est le cas
 function isInTheCart(valueToDetect){
 
     let selectOption = document.getElementById('product_options')
@@ -85,6 +89,7 @@ function isInTheCart(valueToDetect){
 
 }
 
+//Fonction qui ajoute un produit si il n'est pas encore dans le panier
 function addToCart(){
 
     let selectOption = document.getElementById('product_options')

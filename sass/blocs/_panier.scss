@@ -140,31 +140,37 @@ a#add_to_cart{
     display: block;
     margin-bottom: 15px;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
 
 @media (max-width: 1000px) {
-    section.panier{
-        width: 90%;
-        #row{
-            div{
-             flex-direction: column;
-             width: 90%;
-             
-                img{
-                    border-bottom-left-radius: 0px;
-                    border-top-right-radius: 10px;
-                    height: auto;
-                    width: 100%;
-                }
-                p{
-                    font-size: 12px;
-                    width: 80%;
-                    text-align: left;
-                    margin: auto;
-                }
-                p.name{
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
-  }
+   section.panier{
+       width: 90%;
+       #row{
+           div{
+            flex-direction: column;
+            width: 90%;
+            
+               img{
+                   border-bottom-left-radius: 0px;
+                   border-top-right-radius: 10px;
+                   height: auto;
+                   width: 100%;
+               }
+               p{
+                   font-size: 12px;
+                   width: 80%;
+                   text-align: left;
+                   margin: auto;
+               }
+               p.name{
+                   margin-top: 20px;
+               }
+           }
+       }
+   }
+ }

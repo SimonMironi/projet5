@@ -27,7 +27,6 @@ function formatageDuPanier(){
 
 let cart = formatageDuPanier()
 
-
 //On affiche le panier en bouclant dans l'API et dans la variable cart
 
 function displayCart(AllProducts){
@@ -79,18 +78,14 @@ function displayCart(AllProducts){
 
 //Fonction pour afficher le prix total du panier
 
-function totalAmountCart(AllProducts){
+function totalAmountCart(){
     
     let sum = 0
     let test = document.getElementsByClassName("price")
     let testtwo = document.getElementById("priceDisplay")
     
-    console.log(test)
-
-    for (let elem of test){
-        
+    for (let elem of test){   
         sum += parseInt(elem.textContent)
-        
     }
 
     let productsTotal = document.createElement('p')
@@ -98,64 +93,8 @@ function totalAmountCart(AllProducts){
     productsTotal.appendChild(productsTotalText)
 
     testtwo.appendChild(productsTotal)
-    
 }
 
-//Fonction pour envoyer le panier 
-
-/*function sendCart(){
-
-    let idsArray = []
-    let sendBtn = document.getElementById("add_to_cart")
-
-    for (let elem of cart){
-        idsArray.push(elem.id)
-    }
-
-    console.log(idsArray)
-
-    let testthree = {
-        contact: {
-            firstName: "Simon",
-            lastName: "Mironi",
-            email: "mironi.simon@gmail.com",
-            address: "33 rue de la soif",
-            city: "Lyon"
-        },
-        products: idsArray
-    }
-}*/
-
-let idsArray = []
-
-for (let elem of cart){
-    idsArray.push(elem.id)
-}
-
-let testthree = {
-    contact: {
-        firstName: "Simon",
-        lastName: "Mironi",
-        address: "33 rue de la soif",
-        city: "Lyon",
-        email: "mironi.simon@gmail.com"
-    },
-    products: idsArray
-}
-
-async function testtest () {
-
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify(testthree),
-        mode: 'cors'
-    }
-    
-    await fetch('http://localhost:3000/api/cameras/order', options).then(response => console.log(response)).catch(error => console.log(error))
-}
 
 async function fillProducts() {
     await fetch('http://localhost:3000/api/cameras/') // will return info, but in wrong format
@@ -163,7 +102,6 @@ async function fillProducts() {
     .then((cameras) => {
         displayCart(cameras);
         totalAmountCart(cameras);
-        sendCart();
     });      
 }
 

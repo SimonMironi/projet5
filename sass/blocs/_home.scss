@@ -6,7 +6,7 @@ section{
     &.hero{
         height: 50vh;
         width: 97%;
-        margin: 0 auto;
+        margin: auto;
         background: linear-gradient(152deg, rgb(74, 194, 154), rgb(189, 255, 243));
         background-size: cover;
         display: flex;
@@ -193,6 +193,7 @@ section{
 @media (max-width: 1000px) {
     section{
         &.hero{
+            margin: 0;
             height: 80vh;
 
             .container{

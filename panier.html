@@ -38,8 +38,38 @@
     <section id="priceDisplay">
 
     </section>
+
+    <section>
+        <p style="text-align: center;"><strong>Veuillez remplir les champs ci-dessous</strong></p>
+
+        <form id="form">
+
+            <label for="firstname">Prénom</label>
+            <input name="firstname" type="text" id="firstname" placeholder="Votre prénom"></input>
+
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Votre nom"></input>
+
+            <label for="adress">Adresse</label>
+            <input type="text" id="adress" name="adress" placeholder="Votre adresse"></input>
+
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city" placeholder="Votre ville"></input>
+
+            <label for="mail">Email</label>
+            <input type="text" id="mail" name="mail" placeholder="Votre email"></input>
+
+            <label for="mail-confirmation">Confirmer votre email</label>
+            <input type="text" id="mail-confirmation" name="mail-confirmation" placeholder="Confirmer votre email"></input>
+
+            <button type="submit" value="Passer commande" id="add_to_cart" >Passer commande</button>
+
+        </form>
+
+        <p style="color:red;" id="error"></p>
+        
+    </section>
     
-    <a href="#" id="add_to_cart" onclick="testtest()">Procéder au paiement</a>
 
     <footer>
         <div class="socials">
@@ -61,5 +91,8 @@
     </footer>
 
     <script src="displayCart.js"></script>
+    <script src="sendForm.js"></script>
 </body>
 </html>
+
+<!-- onclick="SendRequestObj()" -->

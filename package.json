@@ -17,7 +17,18 @@
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.8",
     "mongoose-unique-validator": "^2.0.2",
-    "sass": "^1.30.0",
+    "node-fetch": "^2.6.1",
+    "sass": "^1.27.0",
     "uuid": "^3.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenClassrooms-Student-Center/JWDP5.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/OpenClassrooms-Student-Center/JWDP5/issues"
+  },
+  "homepage": "https://github.com/OpenClassrooms-Student-Center/JWDP5#readme"
 }

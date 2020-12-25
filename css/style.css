@@ -365,6 +365,16 @@ form {
   width: 60%;
   margin: auto;
 }
+form button {
+  width: max-content;
+  background-color: transparent;
+  border: 2.5px #4ac29a solid;
+  border-radius: 7px;
+  padding: 4px 15px;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
 
 @media (max-width: 1000px) {
   section.panier {

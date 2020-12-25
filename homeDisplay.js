@@ -41,7 +41,6 @@ function displayProducts(cameras){
     cards.appendChild(productPrice)
     
     productsDiv.appendChild(cards)
-    //productsDiv.innerHTML += '<div class="product"> <div class="thumbnail"> <picture> <img src="' + elem.imageUrl + '"> </picture> </div> <div class="text"> <h2>' + elem.name + '</h2> <p> Disponible avec ' + elem.lenses.length + ' lentille(s)</p> <p> <strong> ' + elem.price/100 + ' € </strong> </p> <a href="http://127.0.0.1:5501/produit.html?productId=' + elem._id + '">Consulter</a> </div> </div>';
   }
 }
 

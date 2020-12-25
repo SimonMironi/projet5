@@ -19,7 +19,6 @@ function formatageDuPanier(){
             finalArray.push(panier)
         }
     }
-
     return finalArray
 }
 

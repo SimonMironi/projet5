@@ -145,6 +145,18 @@ form{
     flex-direction: column;
     width: 60%;
     margin: auto;
+
+    button{
+        width: max-content;
+        
+        background-color: transparent;
+        border: 2.5px $green solid;
+        border-radius: 7px;
+        padding: 4px 15px;
+        margin: auto;
+        display: block;
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 1000px) {

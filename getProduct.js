@@ -58,8 +58,6 @@ function isInTheCart(valueToDetect){
 
     cart = []
 
-    console.log(cart)
-
     if (productType){
 
         if (optionExist(productType, choosenOption)){
